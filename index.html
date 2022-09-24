@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body class="ar">
+    <div class="header">
+      <div class="overlay"></div>
+      <div class="en-button lang">EN</div>
+      <div class="box box-num">
+        <h2>ادخل الرقم للمتابعة</h2>
+        <div class="logos">
+          <div class="etisalat">
+            <label for="etisalat"><img src="images/Etisalat.png" alt="etisalat"></label>
+            <input id="etisalat" type="radio" value="4" name="mobileOperator" class="type">
+          </div>
+          <div class="orange">
+            <label for="orange"><img src="images/Orange.png" alt="orange"></label>
+            <input id="orange" type="radio" value="2" name="mobileOperator" class="type">
+          </div>
+          <div class="vodafone">
+            <label for="vodafone"><img src="images/Vodafone.png" alt="vodafone"></label>
+            <input id="vodafone" type="radio" value="1" name="mobileOperator" class="type">
+          </div>
+          <div class="we">
+            <label for="we"><img src="images/We.png" alt="we"></label>
+            <input id="we" type="radio" value="3" name="mobileOperator" class="type">
+          </div>
+        </div>
+        <form>
+          <label for="phone" class="label-phone">ادخل رقمك</label>
+          <div class="input-num">
+            <input type="number" id="phone" placeholder="xxxxxxxxx">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <p class="error">من فضلك اختار الشريحة</p>
+          <button type="submit" class="submit-phone" disabled>اشتراك</button>
+        </form>
+        <p class="description">
+          تقوم بالاشتراك فى خدمة إليجنت جيمز مقابل 4 جنية مصري في اليوم تجدد ذلك. لالغاء الاشتراك ارسل الجاني أنيق
+          لعملاء فودافون
+          الى 6699 لعملاء اورانج إلى 5030 لعملاء اتصالات إلى 1722 ولعملاء WE إلى 4041 مجانا، لالغاء
+        </p>
+      </div>
+      <div class="box-code">
+        <h2>الرجاء إدخال رقم التعريف الشخصي الذي تلقيته</h2>
+        <div>
+          <form class="form-code">
+            <input type="number" placeholder="xxxx" class="input-code">
+            <button type="submit" disabled class="btn-code">ادخل</button>
+            <p class="error-otp"></p>
+            <span class="counter">00:10</span>
+            <button type="button" disabled class="resend">أعد إرسال الرمز</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+
+</html>

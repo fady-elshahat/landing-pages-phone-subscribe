@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body class="en">
+    <div class="header">
+      <div class="overlay"></div>
+      <div class="ar-button lang">AR</div>
+      <div class="box box-num">
+        <h2>Enter the number to continue</h2>
+        <div class="logos">
+          <div class="etisalat">
+            <label for="etisalat"><img src="images/Etisalat.png" alt="etisalat"></label>
+            <input id="etisalat" type="radio" value="4" name="mobileOperator" class="type">
+          </div>
+          <div class="orange">
+            <label for="orange"><img src="images/Orange.png" alt="orange"></label>
+            <input id="orange" type="radio" value="2" name="mobileOperator" class="type">
+          </div>
+          <div class="vodafone">
+            <label for="vodafone"><img src="images/Vodafone.png" alt="vodafone"></label>
+            <input id="vodafone" type="radio" value="1" name="mobileOperator" class="type">
+          </div>
+          <div class="we">
+            <label for="we"><img src="images/We.png" alt="we"></label>
+            <input id="we" type="radio" value="3" name="mobileOperator" class="type">
+          </div>
+        </div>
+        <form>
+          <label for="phone" class="label-phone">Enter Your Number</label>
+          <div class="input-num">
+            <input type="number" id="phone" placeholder="xxxxxxxxx">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <p class="error">Please choose the Mobile Operator</p>
+          <button type="submit" class="submit-phone" disabled>subscribe</button>
+        </form>
+        <p class="description">
+          You subscribe to the Elite Games service for 4 Egyptian pounds per day, and you renew it. To cancel the
+          subscription,
+          send the offender elegant for Vodafone customers to 6699 for Orange customers to 5030 for Etisalat customers
+          to
+          1722 and
+          for WE customers to 4041 for free, to cancel
+        </p>
+      </div>
+      <div class="box-code">
+        <h2>Please Enter The Code Number You Received</h2>
+        <div>
+          <form class="form-code">
+            <input type="number" placeholder="xxxx" class="input-code">
+            <button type="submit" class="btn-code">Enter</button>
+            <p class="error-otp"></p>
+
+            <span class="counter">00:10</span>
+            <button type="button" disabled class="resend">Resend Code</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.5.6/rxjs.umd.min.js"
+      integrity="sha512-yUlloKtrX4U41iKbaafsHrrwII0n1uAX9+3KzuaTjkfgLicBplGfr0vv7FtfwC5kgead1Dmr7sjunFFp0a+s9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>
