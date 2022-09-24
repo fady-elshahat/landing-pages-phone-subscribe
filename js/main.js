@@ -13,7 +13,7 @@ const arabicPage = document.querySelector( ".ar" );
 const englishPage = document.querySelector( ".en" );
 const langButton = document.querySelector( ".lang" );
 const formOTP = document.querySelector( ".form-code" )
-let lang;
+let lang = 2;
 const counter = document.querySelector( '.counter' );
 const resendBtn = document.querySelector( '.resend' )
 const inputCode = document.querySelector( ".input-code" )
@@ -23,8 +23,6 @@ const btnCode = document.querySelector( '.btn-code' )
 window.addEventListener( 'load', ( e ) => {
   if ( location.pathname == "/page-en.html" ) {
     lang = 1
-  } else if ( location.pathname == "/" ) {
-    lang = 2
   }
   console.log( lang );
 } )
