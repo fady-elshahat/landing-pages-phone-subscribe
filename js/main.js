@@ -22,8 +22,8 @@ const btnCode = document.querySelector( '.btn-code' )
 
 langButton.addEventListener( "click", () => {
   if ( location.pathname == "/page-en.html" ) {
-    location.replace( "./../index.html" )
-  } else if ( location.pathname == "/index.html" ) {
+    location.replace( "/" )
+  } else if ( location.pathname == "/" ) {
     location.replace( "./../page-en.html" )
     lang = 1
   }
