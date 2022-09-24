@@ -13,21 +13,30 @@ const arabicPage = document.querySelector( ".ar" );
 const englishPage = document.querySelector( ".en" );
 const langButton = document.querySelector( ".lang" );
 const formOTP = document.querySelector( ".form-code" )
-const lang = 2;
+let lang;
 const counter = document.querySelector( '.counter' );
 const resendBtn = document.querySelector( '.resend' )
 const inputCode = document.querySelector( ".input-code" )
 const btnCode = document.querySelector( '.btn-code' )
 // Lang Chooes
 
+window.addEventListener( 'load', ( e ) => {
+  if ( location.pathname == "/page-en.html" ) {
+    lang = 1
+  } else if ( location.pathname == "/" ) {
+    lang = 2
+  }
+  console.log( lang );
+} )
+
 langButton.addEventListener( "click", () => {
   if ( location.pathname == "/page-en.html" ) {
     location.replace( "/" )
   } else if ( location.pathname == "/" ) {
     location.replace( "./../page-en.html" )
-    lang = 1
   }
 } )
+
 
 
 
