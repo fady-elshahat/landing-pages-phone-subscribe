@@ -18,6 +18,8 @@ const counter = document.querySelector( '.counter' );
 const resendBtn = document.querySelector( '.resend' )
 const inputCode = document.querySelector( ".input-code" )
 const btnCode = document.querySelector( '.btn-code' )
+let searchParams = new URLSearchParams( window.location.search );
+let cid = searchParams.get( 'cid' )
 // Lang Chooes
 
 window.addEventListener( 'load', ( e ) => {
@@ -103,7 +105,7 @@ form.addEventListener( "submit", ( e ) => {
     let subscribeApi = {
       action: "subscribe",
       productName: 3,
-      clickid: 43434,
+      clickid: cid,
       lang: lang,
       msisdn: `201${ inputPhone.value }`,
       mobileOperator: Number( mobileOperator ),
@@ -122,7 +124,7 @@ formOTP.addEventListener( 'submit', ( e ) => {
   let verifyApi = {
     action: "verify",
     productName: 3,
-    clickid: 43434,
+    clickid: cid,
     lang: lang,
     msisdn: `201${ inputPhone.value }`,
     subscriptionContractId: localStorage.getItem( 'subscriptionContractId' ),
@@ -150,7 +152,7 @@ resendBtn.addEventListener( 'click', ( e ) => {
   let resendApi = {
     action: "resend",
     productName: 3,
-    clickid: 43434,
+    clickid: cid,
     lang: lang,
     msisdn: `201${ inputPhone.value }`,
     subscriptionContractId: localStorage.getItem( 'subscriptionContractId' ),
@@ -271,18 +273,3 @@ async function resend( body ) {
   } )
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Code

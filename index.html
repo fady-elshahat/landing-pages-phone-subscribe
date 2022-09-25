@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet">
-    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -22,27 +21,44 @@
         <h2>ادخل الرقم للمتابعة</h2>
         <div class="logos">
           <div class="etisalat">
-            <label for="etisalat"><img src="images/Etisalat.png" alt="etisalat"></label>
-            <input id="etisalat" type="radio" value="4" name="mobileOperator" class="type">
+
+            <label class="container" for="etisalat"><img src="images/Etisalat.png" alt="etisalat">
+              <input id="etisalat" type="radio" value="4" name="mobileOperator" class="type">
+              <span class="checkmark"></span>
+            </label>
           </div>
           <div class="orange">
-            <label for="orange"><img src="images/Orange.png" alt="orange"></label>
-            <input id="orange" type="radio" value="2" name="mobileOperator" class="type">
+            <label class="container" for="orange"><img src="images/Orange.png" alt="orange">
+              <input id="orange" type="radio" value="2" name="mobileOperator" class="type">
+              <span class="checkmark"></span>
+
+            </label>
+
           </div>
           <div class="vodafone">
-            <label for="vodafone"><img src="images/Vodafone.png" alt="vodafone"></label>
-            <input id="vodafone" type="radio" value="1" name="mobileOperator" class="type">
+            <label class="container" for="vodafone"><img src="images/Vodafone.png" alt="vodafone">
+              <input id="vodafone" type="radio" value="1" name="mobileOperator" class="type">
+              <span class="checkmark"></span>
+
+
+            </label>
           </div>
           <div class="we">
-            <label for="we"><img src="images/We.png" alt="we"></label>
-            <input id="we" type="radio" value="3" name="mobileOperator" class="type">
+            <label class="container" for="we"><img src="images/We.png" alt="we">
+              <input id="we" type="radio" value="3" name="mobileOperator" class="type">
+              <span class="checkmark"></span>
+
+
+            </label>
           </div>
         </div>
         <form>
           <label for="phone" class="label-phone">ادخل رقمك</label>
           <div class="input-num">
-            <input type="number" id="phone" placeholder="xxxxxxxxx">
-            <i class="fa-solid fa-phone"></i>
+            <input type="number" id="phone" placeholder="xxxxxxxxx" pattern="[0-9]*" min="0" inputmode="numeric">
+            <i>
+              <img src="/images/211830_telephone_icon.svg" width="20px" alt="">
+            </i>
           </div>
           <p class="error">من فضلك اختار الشريحة</p>
           <button type="submit" class="submit-phone" disabled>اشتراك</button>

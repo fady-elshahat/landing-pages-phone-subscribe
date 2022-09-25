@@ -17,7 +17,7 @@
   <body class="en">
     <div class="header">
       <div class="overlay"></div>
-      <div class="ar-button lang">AR</div>
+      <div class="ar-button lang">عربي</div>
       <div class="box box-num">
         <h2>Enter the number to continue</h2>
         <div class="logos">
@@ -41,8 +41,10 @@
         <form>
           <label for="phone" class="label-phone">Enter Your Number</label>
           <div class="input-num">
-            <input type="number" id="phone" placeholder="xxxxxxxxx">
-            <i class="fa-solid fa-phone"></i>
+            <input type="number" id="phone" placeholder="xxxxxxxxx" pattern="[0-9]*" min="0" inputmode="numeric">
+            <i>
+              <img src="/images/211830_telephone_icon.svg" width="20px" alt="">
+            </i>
           </div>
           <p class="error">Please choose the Mobile Operator</p>
           <button type="submit" class="submit-phone" disabled>subscribe</button>
