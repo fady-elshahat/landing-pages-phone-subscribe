@@ -16,7 +16,9 @@
   <body class="ar">
     <div class="header">
       <div class="overlay"></div>
-      <div class="en-button lang">EN</div>
+      <div class="en-button lang">
+        <a href="page-en.html">EN</a>
+      </div>
       <div class="box box-num">
         <h2>ادخل الرقم للمتابعة</h2>
         <div class="logos">
@@ -55,7 +57,9 @@
         <form>
           <label for="phone" class="label-phone">ادخل رقمك</label>
           <div class="input-num">
-            <input type="number" id="phone" placeholder="xxxxxxxxx" pattern="[0-9]*" min="0" inputmode="numeric">
+            <input type="number" id="phone" placeholder="xxxxxxxxx" pattern="[0-9]*" min="0" inputmode="numeric"
+              onkeypress="return isNumber(event)" oncopy="return false" onpaste="return false" ondrop="return false"
+              ondrag="return false">
             <i>
               <img src="/images/211830_telephone_icon.svg" width="20px" alt="">
             </i>
@@ -73,7 +77,9 @@
         <h2>الرجاء إدخال رقم التعريف الشخصي الذي تلقيته</h2>
         <div>
           <form class="form-code">
-            <input type="number" placeholder="xxxx" class="input-code"  pattern="[0-9]*" min="0" inputmode="numeric">
+            <input type="number" placeholder="xxxx" class="input-code" pattern="[0-9]*" min="0" inputmode="numeric"
+              onkeypress="return isNumber(event)" oncopy="return false" onpaste="return false" ondrop="return false"
+              ondrag="return false">
             <button type="submit" disabled class="btn-code">ادخل</button>
             <p class="error-otp"></p>
             <span class="counter">00:10</span>
