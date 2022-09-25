@@ -73,7 +73,7 @@
         <h2>الرجاء إدخال رقم التعريف الشخصي الذي تلقيته</h2>
         <div>
           <form class="form-code">
-            <input type="number" placeholder="xxxx" class="input-code">
+            <input type="number" placeholder="xxxx" class="input-code"  pattern="[0-9]*" min="0" inputmode="numeric">
             <button type="submit" disabled class="btn-code">ادخل</button>
             <p class="error-otp"></p>
             <span class="counter">00:10</span>
