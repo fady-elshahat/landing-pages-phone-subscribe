@@ -19,7 +19,7 @@ const resendBtn = document.querySelector( '.resend' )
 const inputCode = document.querySelector( ".input-code" )
 const btnCode = document.querySelector( '.btn-code' )
 let searchParams = new URLSearchParams( window.location.search );
-let cid = searchParams.get( 'cid' )
+let cid = Number( searchParams.get( 'cid' ) )
 // Lang Chooes
 
 window.addEventListener( 'load', ( e ) => {
@@ -110,6 +110,7 @@ form.addEventListener( "submit", ( e ) => {
       msisdn: `201${ inputPhone.value }`,
       mobileOperator: Number( mobileOperator ),
     }
+    console.log( subscribeApi );
     subscribe( subscribeApi )
   }
 } )
